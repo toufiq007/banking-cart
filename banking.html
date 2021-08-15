@@ -20,15 +20,15 @@
       <div class="row gx-5">
         <div class="col bg-danger p-4 text-light me-4 rounded">
           <h3>Deposite</h3>
-          <h2>$<span>00</span></h2>
+          <h2>$<span id="previousDepositeAmmount">00</span></h2>
         </div>
         <div class="col bg-warning p-4 text-light me-4 rounded">
-          <h3>Withdraw</h3>
-          <h2>$<span>00</span></h2>
+          <h3>widthdraw</h3>
+          <h2>$<span id="previouswidthdrawAmmount">00</span></h2>
         </div>
         <div class="col bg-info p-4 text-light rounded">
           <h3>Current Balance</h3>
-          <h2>$<span>00</span></h2>
+          <h2>$<span id="previousMainAmmount">00</span></h2>
         </div>
       </div>
     </div>
@@ -43,16 +43,16 @@
         <div class="col bg-secondary p-4 me-4">
           <h3 class="mb-4">Your deposite ammount</h3>
           <div class="mb-3">
-            <input type="number" placeholder="enter your ammount" class="form-control">
+            <input type="number" id="depositeInput" placeholder="enter your ammount" class="form-control">
           </div>
-          <button class="btn btn-success">Update deposite</button>
+          <button class="btn btn-success" id="depositeButton">Update deposite</button>
         </div>
         <div class="col bg-secondary p-4" style="background: coral !important;">
-          <h3 class="mb-4">Your Withdraw ammount</h3>
+          <h3 class="mb-4">Your widthdraw ammount</h3>
           <div class="mb-3">
-            <input type="number" placeholder="enter your ammount" class="form-control">
+            <input type="number" id="widthDrawInput" placeholder="enter your ammount" class="form-control">
           </div>
-          <button class="btn btn-danger">Update Withdraw</button>
+          <button class="btn btn-danger" id="widthdrawButton">Update widthdraw</button>
         </div>
       </div>
     </div>
